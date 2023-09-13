@@ -10,4 +10,8 @@ public interface HomeService {
 
 	List<Student> getallstu();
 
+	Student getsinglestu(int id);
+
+	void Deletedata(int id);
+
 }

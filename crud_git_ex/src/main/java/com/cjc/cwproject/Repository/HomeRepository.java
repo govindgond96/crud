@@ -7,5 +7,6 @@ import com.cjc.cwproject.Model.Student;
 
 @Repository
 public interface HomeRepository extends CrudRepository<Student, Integer>{
+	Student findBySid(int id);
 
 }

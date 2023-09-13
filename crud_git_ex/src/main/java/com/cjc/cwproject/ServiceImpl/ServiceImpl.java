@@ -28,4 +28,16 @@ public class ServiceImpl implements HomeService{
 		return (List<Student>) hr.findAll();
 	}
 
+	@Override
+	public Student getsinglestu(int id) {
+		return hr.findBySid(id);
+		
+	}
+
+	@Override
+	public void Deletedata(int id) {
+		hr.deleteById(id);
+		
+	}
+
 }
